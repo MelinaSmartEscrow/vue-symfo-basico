@@ -1,0 +1,13 @@
+name: vsbasic
+recipe: lamp
+config:
+  webroot: ./public
+services:
+  appserver:
+    type: php:7.4
+    via: apache
+  node:
+    type: node:16
+tooling:
+  npm:
+    service: node
